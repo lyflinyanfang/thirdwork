@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration:none;
+	text-align:center;
+}
+ul{
+	list-style-type:none;
+	
+}
+.nav ul li {
+    float:left;
+    position:relative;
+}
+/*二级导航*/
+.nav ul li ul{
+    display:none;
+}
+.nav ul li:hover ul{
+    display:block;
+    width:150px;
+    position:absolute;
+    top:59px;
+    left:0px;
+	background-color:#FFFF66;
+}
+.nav ul li:hover ul li a{
+    display:block;
+    width:150px;
+    height:30px;
+	position:relative;
+}
+.nav ul li:hover ul li a:hover{
+    background-color:pink;
+}
+/*三级导航*/
+.nav ul li:hover ul li ul{
+    display:none;  
+}
+.nav ul li:hover ul li:hover ul{
+    display:block;
+	width:150px;
+	position:absolute;
+	top:0px;
+	left:150px;
+	background-color:#33FF33;
+}
+.nav ul li:hover ul li:hover ul li a{
+    display:block;
+	width:150px;
+	height:30px;
+	position:relative;
+}
+.nav ul li:hover ul li:hover ul li a:hover{
+    background-color:yellow;
+}  
+
+ /* CSS Document */
+
